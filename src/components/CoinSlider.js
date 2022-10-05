@@ -9,13 +9,31 @@ import "swiper/css/pagination";
 // import "./styles.css";
 
 // import required modules
-import { Pagination } from "swiper";
+
 import CoinCart from "./CoinCart";
 
 export default function CoinSlider() {
   return (
-    <>
-      <Swiper slidesPerView={3} spaceBetween={30} className="mySwiper">
+    <div className="w-full">
+      <Swiper
+        breakpoints={{
+          300: {
+            // width: 300,
+            slidesPerView: 1.4,
+          },
+          400: {
+            // width: 300,
+            slidesPerView: 2.4,
+          },
+
+          768: {
+            // width: 768,
+            slidesPerView: 2.4,
+          },
+        }}
+        spaceBetween={10}
+        className="mySwiper"
+      >
         <SwiperSlide>
           <CoinCart />
         </SwiperSlide>
@@ -53,6 +71,6 @@ export default function CoinSlider() {
           <CoinCart />
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }

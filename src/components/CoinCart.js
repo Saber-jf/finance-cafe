@@ -5,7 +5,7 @@ import { MdOutlineArrowDropUp } from "react-icons/md";
 
 export default function CoinCart() {
   return (
-    <div className="w-[198px] h-[226] bg-[#30505c] bg-opacity-[.1] flex items-center justify-center rounded-lg py-2 ">
+    <div className="w-full  bg-[#30505c] bg-opacity-[.1] flex items-center justify-center rounded-lg py-2 ">
       <div className="p-4 flex flex-col gap-4 justify-center items-center">
         <div className="flex items-center gap-2">
           <span className="w-8 h-8">

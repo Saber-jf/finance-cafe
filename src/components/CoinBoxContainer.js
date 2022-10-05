@@ -1,12 +1,13 @@
 import React from "react";
 import CoinSlider from "./CoinSlider";
 import ad from "../photo/ad.gif";
+import had from "../photo/h-ad.png";
 
 export default function CoinBoxContainer() {
   return (
     <div>
-      <div className="grid grid-cols-12 shadow-xl py-4">
-        <div className="col-span-2">
+      <div className="grid space-y-2 grid-cols-1 md:grid-cols-12 shadow-xl py-4 rounded-xl">
+        <div className=" hidden md:block col-span-2">
           <img src={ad} alt="ad" />
         </div>
         <div className="col-span-4 space-y-4">
@@ -28,6 +29,11 @@ export default function CoinBoxContainer() {
         </div>
         <div className="col-span-6">
           <CoinSlider />
+        </div>
+        <div>
+          <div className="border-2 w-full h- md:hidden">
+            <img className="w-full" src={had} alt="ad" />
+          </div>
         </div>
       </div>
     </div>

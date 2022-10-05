@@ -4,12 +4,14 @@ import CoinCart from "./components/CoinCart";
 import CoinBoxContainer from "./components/CoinBoxContainer";
 import ListCom from "./components/ListCom";
 import Poster from "./components/Poster";
+import NewsComponent from "./components/NewsComponent";
+import NewsContainer from "./components/NewsContainer";
 
 function App() {
   return (
     <>
       <Poster />
-      <div className="max-w-7xl mx-auto pt-20">
+      <div className="max-w-7xl mx-auto pt-20 px-2">
         <CoinBoxContainer />
         <div className="">
           <div className="w-full py-8">
@@ -29,7 +31,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="p-2 space-y-2 divide-y-[1px] ">
+          <div className="p-2 space-y-2 divide-y-[1px] shadow-md rounded-xl ">
             <ListCom />
             <ListCom />
             <ListCom />
@@ -41,6 +43,7 @@ function App() {
             <ListCom />
           </div>
         </div>
+        <NewsContainer />
       </div>
     </>
   );
